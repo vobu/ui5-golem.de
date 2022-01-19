@@ -1,0 +1,14 @@
+{
+  "generator-ui5-ts-app": {
+    "application": "golem",
+    "namespace": "de",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.97.1",
+    "author": "Volker Buzek",
+    "tstypes": "@openui5/ts-types-esm",
+    "tstypesVersion": "1.97.1",
+    "appId": "de.golem",
+    "appURI": "de/golem",
+    "setupCompleted": true
+  }
+}
