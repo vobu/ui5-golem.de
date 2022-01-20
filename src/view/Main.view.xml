@@ -12,6 +12,7 @@
 			<fiori:Bar>
 				<fiori:startContent>
 					<webc:Button icon="home" />
+					<!-- <Button icon="sap-icon://home" /> -->
 				</fiori:startContent>
 				<webc:Title text="{i18n>app_title}" />
 				<fiori:endContent>
