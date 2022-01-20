@@ -1,20 +1,53 @@
-<mvc:View
-	controllerName="de.golem.controller.Main"
+<mvc:View controllerName="de.golem.controller.Main"
 	displayBlock="true"
 	xmlns="sap.m"
+	xmlns:fiori="sap.ui.webc.fiori"
+	xmlns:webc="sap.ui.webc.main"
 	xmlns:mvc="sap.ui.core.mvc">
 
-	<MessagePage
-		title="{i18n>app_title}"
-		text="{i18n>app_title}"
-		icon="sap-icon://accept"
-		id="page"
-		description="{i18n>app_description}">
-		<buttons>
-			<Button
-				text="{i18n>btn_text}"
-				press="sayHello" />
-		</buttons>
-	</MessagePage>
+	<fiori:Page width="100%"
+		height="100%"
+		floatingFooter="true">
+		<fiori:header>
+			<fiori:Bar>
+				<fiori:startContent>
+					<webc:Button icon="home" />
+				</fiori:startContent>
+				<webc:Title text="{i18n>app_title}" />
+				<fiori:endContent>
+					<webc:Button icon="action-settings" />
+				</fiori:endContent>
+			</fiori:Bar>
+			<fiori:Bar design="Subheader">
+				<Text text="Lorem ipsum dolor sit amet" />
+			</fiori:Bar>
+		</fiori:header>
 
+		<VBox alignItems="Center"
+			justifyContent="Center"
+			height="100%">
+			<webc:Icon name="sap-icon://accept"
+				height="5rem"
+				width="5rem"
+				class="sapUiSmallMargin" />
+			<webc:Title text="{i18n>app_description}"
+				class="sapUiSmallMargin" />
+			<webc:Button text="{i18n>btn_text}"
+				class="sapUiSmallMargin"
+				click=".sayHello" />
+		</VBox>
+
+		<fiori:footer>
+			<fiori:Bar design="FloatingFooter">
+				<fiori:endContent>
+					<webc:Button design="Positive"
+						text="OK" />
+					<webc:Button design="Negative"
+						text="Decline" />
+					<webc:Button design="Transparent"
+						text="Cancel" />
+				</fiori:endContent>
+			</fiori:Bar>
+		</fiori:footer>
+	</fiori:Page>
 </mvc:View>
